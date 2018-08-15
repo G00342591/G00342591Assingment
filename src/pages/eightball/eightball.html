@@ -1,0 +1,17 @@
+
+<h4 text-center>Magic 8 Ball</h4>
+<h2 text-center>Please enter a Yes/No question!</h2>
+<!-->Two way data binding used to display the text from input box and output it below -->
+<div class="questionInput">
+      <p>Write your question</p>
+      <input [(ngModel)]="question"/>
+</div>
+
+<div class = "questionOutput">
+    <ion-label><h3>Your question is {{question}}?</h3></ion-label>
+</div>
+
+<div class = "wrapper">
+    <button ion-button color text-center = "secondary" outline round  (click)="eightBallQuestion()">Start</button>
+</div>
+
